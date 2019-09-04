@@ -1,0 +1,826 @@
+.phone_wrapper {
+    width: 980px;
+    margin: 0 auto
+}
+
+.phone_topbar {
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    height: 39px;
+    line-height: 38px;
+    position: relative;
+    z-index: 111
+}
+
+.phone_topbar li {
+    background: url(../images/phone_universal.png?__UED__1427680997718) no-repeat right -188px
+}
+
+.phone_topbar li.last {
+    background: 0 0
+}
+
+.phone_topbar a {
+    font-family: "microsoft yahei";
+}
+
+.phone_site {
+    float: left
+}
+
+.phone_site li {
+    float: left;
+    padding: 0 10px
+}
+
+.phone_site li a {
+    color: #333;
+    display: block
+}
+
+.phone_site li a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+.phone_site .site_cur a {
+    color: #f60;
+    font-weight: 700;
+    border-bottom: #f60 2px solid;
+    position: relative;
+    _margin-bottom: -1px;
+}
+
+.phone_menu {
+    _height: 39px;
+    _overflow: hidden;
+    float: right;
+    display: inline
+}
+
+.phone_menu li {
+    float: left;
+    padding: 0 10px
+}
+
+.phone_menu li a {
+    color: #333
+}
+
+.phone_menu li a:hover {
+    text-decoration: underline;
+}
+
+.phone_menu li a:hover, .phone_menu li a:hover span {
+    color: #f60
+}
+
+.phone_menu li .ico_desktop, .phone_menu li .ico_flash, .phone_menu li .ico_feedback, .phone_menu li .ico_col, .phone_site li .ico_flash {
+    background: url(../images/phone_universal.png?__UED__1427680997718) no-repeat 0 -399px;
+    width: 15px;
+    height: 12px;
+    float: left;
+    margin: 11px 2px 0 0;
+    display: inline
+}
+
+.phone_menu li .ico_col {
+    background-position: 0 -175px;
+    margin-top: 11px
+}
+
+.phone_menu li .ico_flash, .phone_site li .ico_flash {
+    background-position: 0 -285px;
+    width: 16px;
+    height: 16px;
+    margin-top: 11px
+}
+
+.phone_menu li .ico_feedback {
+    background-position: 0 -302px
+}
+
+.phone_menu span {
+    _height: 39px;
+    _line-height: 40px;
+    float: left;
+    font-family: simsun;
+    color: #333;
+    cursor: pointer
+}
+
+.phone_menu .phone_menu_entrance {
+    position: relative;
+    z-index: 100;
+    height: 39px;
+    zoom: 1;
+    border-left: 1px solid #f7f7f7;
+    border-right: 1px solid #f7f7f7
+}
+
+.phone_sitemap .phone_icon_list, .phone_menu li.phone_menu_cur .phone_icon_list {
+    background: url(../images/phone_universal.png?__UED__1427680997718) no-repeat -2px -345px;
+    width: 11px;
+    height: 10px;
+    overflow: hidden;
+    float: left;
+    margin: 14px 2px 0 0;
+    display: inline
+}
+
+.phone_sitemap .phone_icon_dropdown, .phone_menu li.phone_menu_cur .phone_icon_dropdown {
+    float: left;
+    background: url(../images/phone_universal.png?__UED__1427680997718) no-repeat -4px -336px;
+    width: 8px;
+    height: 4px;
+    overflow: hidden;
+    margin: 18px 0 0 2px;
+    display: inline
+}
+
+.phone_menu li.phone_menu_cur {
+    height: 40px;
+    background: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd
+}
+
+.phone_menu li.phone_menu_cur span {
+    color: #f60
+}
+
+.phone_menu li.phone_menu_cur .phone_sitemap {
+    color: #f60
+}
+
+.phone_menu li.phone_menu_cur .phone_icon_list {
+    background-position: -2px -345px
+}
+
+.phone_menu li.phone_menu_cur .phone_icon_dropdown {
+    background-position: -4px -362px
+}
+
+.phone_sitemap_list {
+    position: absolute;
+    display: none;
+    right: -1px;
+    top: 40px;
+    width: 978px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 20px 0;
+    overflow: hidden
+}
+
+.phone_list_box {
+    overflow: hidden;
+    margin-right: -13px;
+    zoom: 1
+}
+
+.phone_list {
+    float: left;
+    width: 224px;
+    padding-left: 20px;
+    border-right: 1px solid #ddd;
+    margin-right: 2px;
+    box-sizing: content-box;
+}
+
+.phone_list p {
+    font-size: 16px;
+    color: #f60
+}
+
+.phone_sitemap_list .phone_list_item li {
+    float: left;
+    width: 110px;
+    background: 0 0;
+    padding: 0;
+    line-height: 32px;
+    height: 32px
+}
+
+.phone_sitemap_list .phone_list_item li a {
+    line-height: 32px;
+    height: 32px
+}
+
+.phone_game_qrcode {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    display: inline
+}
+
+.phone_game_qrcode img {
+    width: 80px;
+    height: 80px
+}
+
+.phone_sitemap_list .phone_game_list {
+    margin-top: 5px
+}
+
+.phone_sitemap_list .phone_game_list li {
+    background: 0 0;
+    padding: 0;
+    width: 100px;
+    line-height: 24px;
+    height: 32px
+}
+
+.phone_sitemap_list .phone_game_list li a {
+    line-height: 24px;
+    height: 32px
+}
+
+.phone_footer {
+    background: #EDEDED;
+    border-top: 2px solid #E1E1E1;
+    color: #666;
+    padding: 25px 0 30px;
+    overflow: hidden;
+    zoom: 1
+}
+
+.phone_footer .phone_wrapper {
+    position: relative;
+    zoom: 1
+}
+
+.phone_footer a:hover {
+    color: #f60
+}
+
+.phone_product {
+    height: 28px;
+    border-bottom: 1px dashed #D5D5D5;
+    font-size: 0;
+    overflow: hidden;
+    padding-bottom: 12px;
+    margin: 0 0 20px
+}
+
+.phone_product dt {
+    display: none
+}
+
+.phone_product dd.last {
+    background: 0 0
+}
+
+.phone_product dd {
+    color: #333;
+    float: left;
+    height: 16px;
+    font-size: 12px;
+    margin: 2px 0 0;
+    background: url(../images/phone_universal.png?__UED__1427680997718) no-repeat right -231px;
+    padding: 0 8px;
+    font-family: simsun;
+    line-height: 16px
+}
+
+.phone_product dd a {
+    color: #666
+}
+
+.phone_product dd i {
+    margin: 0 5px 0 0;
+    _margin: 0 2px 0 0
+}
+
+.phone_product .ico_yx, .phone_product .ico_my, .phone_product .ico_sj, .phone_product .ico_dm, .phone_product .ico_wg, .phone_product .ico_news, .phone_product .ico_api, .phone_product .ico_android, .phone_product .ico_app {
+    background: url(../images/phone_universal.png?__UED__1427680997718) no-repeat 0 -35px;
+    width: 16px;
+    height: 16px;
+    float: left
+}
+
+.phone_product .ico_my {
+    background-position: 0 -53px
+}
+
+.phone_product .ico_sj {
+    background-position: 0 -71px
+}
+
+.phone_product .ico_dm {
+    background-position: 0 -89px
+}
+
+.phone_product .ico_wg {
+    background-position: 0 -107px
+}
+
+.phone_product .ico_news {
+    background-position: 0 -125px
+}
+
+.phone_product .ico_api {
+    background-position: 0 -143px
+}
+
+.phone_product .ico_android {
+    background-position: 0 -267px
+}
+
+.phone_product .ico_app {
+    background-position: 0 -419px
+}
+
+.phone_copyright {
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+    font-family: arial
+}
+
+.phone_copyright a {
+    color: #999;
+    padding-right: 10px;
+    margin-right: 10px
+}
+
+.phone_copyright .m_link {
+    padding-bottom: 9px;
+    font-size: 0
+}
+
+.phone_copyright .m_link a {
+    border-right: 1px solid #999;
+    font-size: 12px;
+    color: #00519D
+}
+
+.phone_copyright .m_link a:hover {
+    color: #f60
+}
+
+.phone_copyright .m_link a.last {
+    border-right: 0 none
+}
+.phone_copyright p i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:6px;
+    position: relative;
+    top:-1px;
+    width:18px;
+    height:20px;
+    background: url(../images/an.png) no-repeat;
+}
+.phone_copyright p span {
+    color:#999 !important;
+}
+.phone_copyright p span a{
+    margin-right:0;
+    padding-right:0;
+}
+.phone_copyright p a {
+}
+.phone_copyright .bar {
+    margin-right:10px;
+    padding-right:10px;
+    border-right: 1px solid #999;
+    font-size: 12px;
+    color: #00519D;
+}
+.phone_pad {
+    visibility: hidden
+}
+
+.phone_anquan {
+    position: absolute;
+    right: 0;
+    top: 65px
+}
+
+.phone_lianmeng img, .phone_anquan img {
+    display: block;
+}
+
+.phone_mtopbar {
+    height: 34px;
+    background: url(../web/www/common/../common/images/phone_mini.png?__UED__1427680997718) repeat-x
+}
+
+.phone_mwrapper {
+    width: 980px;
+    margin: 0 auto
+}
+
+.phone_mtopbar .a_logo, .phone_mtopbar .i_logo {
+    background: url(../web/www/common/../common/images/phone_mini.png?__UED__1427680997718) no-repeat 0 -36px;
+    width: 140px;
+    height: 28px;
+    float: left;
+    display: inline;
+    margin-top: 3px;
+    text-indent: -1024em;
+    overflow: hidden
+}
+
+.phone_mtopbar .i_logo {
+    background-position: 0 -65px
+}
+
+.phone_nav {
+    overflow: hidden;
+    margin: 0 0 0 10px;
+    float: left;
+    display: inline;
+    font-size: 12px
+}
+
+.phone_nav li {
+    float: left;
+    display: inline;
+    margin: 0 5px;
+    line-height: 34px
+}
+
+.phone_msch {
+    float: right;
+    display: inline;
+    width: 182px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    margin: 5px 0 0
+}
+
+.phone_msch .m_sch {
+    background: url(../web/www/common/../common/images/phone_mini.png?__UED__1427680997718) no-repeat 0 -94px;
+    width: 101px;
+    height: 20px;
+    line-height: 20px;
+    padding: 2px 10px 2px 25px;
+    float: left
+}
+
+.phone_msch .m_sch .ipt_txt {
+    border: 0 none;
+    color: #999;
+    width: 101px;
+    height: 20px;
+    background: 0 0;
+    vertical-align: top
+}
+
+.phone_msch .search_btn {
+    background: url(../web/www/common/../common/images/phone_mini.png?__UED__1427680997718) no-repeat -136px -94px;
+    width: 46px;
+    height: 24px;
+    float: left;
+    color: #353535;
+    cursor: pointer;
+    border: 0 none
+}
+
+.phone_cntopbar {
+    background: url(../images/phone_topbar.png?__UED__1427680997718) repeat-x 0 -40px;
+    padding: 5px 0 0;
+    height: 45px
+}
+
+.phone_cntopbar .phone_login {
+    float: right;
+    padding: 0 0 5px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px
+}
+
+.logo_img {
+    float: left;
+    width: 220px;
+    height: 70px;
+}
+
+.phone_cntopbar .cn_logo {
+    float: left;
+    background: url(../images/phone_topbar.png?__UED__1427680997718) no-repeat;
+    width: 186px;
+    height: 40px;
+    margin: 2px 0 0;
+    display: inline;
+    text-indent: -1024em;
+    overflow: hidden
+}
+
+.phone_cntopbar .phone_nav {
+    float: left;
+    margin: 0 0 0 20px;
+    display: inline
+}
+
+.phone_cntopbar li {
+    background: url(../images/phone_universal.png?__UED__1427680997718) no-repeat;
+    background-position: right -185px;
+    _background-position: right -188px
+}
+
+.phone_cntopbar li.last {
+    background: 0 0
+}
+
+.phone_cntopbar .phone_nav li {
+    line-height: 44px;
+    background: 0 0
+}
+
+.phone_cntopbar .phone_nav a {
+    padding: 0 10px;
+    color: #333;
+    font-size: 14px;
+    display: block;
+    border-bottom: 1px solid #dcdcdc
+}
+
+.phone_cntopbar .phone_nav a:hover {
+    text-decoration: none;
+    color: #f60
+}
+
+.phone_apex {
+    width: 192px;
+    padding: 10px 10px 5px;
+    line-height: 26px
+}
+
+.phone_apex .phone_user .phone_avatar {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: -60px;
+    display: inline
+}
+
+.phone_apex .phone_user {
+    padding-left: 60px;
+    zoom: 1;
+    border-bottom: 1px dashed #cecece;
+    padding-bottom: 10px
+}
+
+.phone_apex .phone_username {
+    font-size: 14px;
+    color: #333;
+    font-family: simsun
+}
+
+.phone_apex .phone_setting a {
+    color: #3da3e3
+}
+
+.phone_apex .phone_setting a:hover {
+    color: #f60
+}
+
+.phone_apex .phone_setting .phone_loginout {
+    float: right;
+    color: #3DA3E3;
+    cursor: ponter
+}
+
+.phone_apex .phone_user_list {
+    padding: 10px 0 5px;
+    zoom: 1
+}
+
+.phone_apex .phone_user_list li {
+    height: 24px;
+    line-height: 24px;
+    background: 0 0;
+    float: none;
+    padding: 0;
+    overflow: hidden
+}
+
+.phone_apex .phone_user_list li a {
+    display: inline
+}
+
+.phone_apex .phone_user_list i {
+    background: url(../images/phone_universal.png?__UED__1427680997718) no-repeat 0 -378px;
+    float: left;
+}
+
+.phone_apex .phone_user_list .icon_gift {
+    width: 16px;
+    height: 16px;
+    margin: 3px 5px 0 0;
+    float: left;
+}
+
+.phone_login {
+    font-size: 0;
+    height: 32px;
+    overflow: hidden
+}
+
+.phone_login a {
+    margin-left: 10px;
+    font-size: 12px
+}
+
+.phone_login .m_stress {
+    color: #f60
+}
+
+.phone_sitemap {
+    _width: 78px
+}
+
+.phone_userlogin {
+    _width: auto;
+    float: left
+}
+
+.phone_userlogin span {
+    line-height: 39px;
+    width: 70px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center
+}
+
+.phone_sitemap a {
+    display: block;
+    white-space: nowrap;
+    width: 60px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.phone_site {
+    position: relative;
+    left: -10px
+}
+
+.phone_menu li {
+    height: 38px
+}
+
+.phone_menu .load {
+    height: 38px;
+    line-height: 38px;
+    _line-height: 39px;
+    overflow: hidden;
+    color: #555
+}
+
+.phone_menu li a {
+    display: block;
+    _float: left;
+    _height: 38px;
+    _line-height: 39px;
+    _overflow: hidden
+}
+
+.phone_menu li .ico_flash {
+    margin-right: 4px
+}
+
+.phone_sitemap .phone_icon_dropdown, .phone_menu li.phone_menu_cur .phone_icon_dropdown {
+    width: 7px;
+    margin-left: 5px
+}
+
+.phone_sitemap .phone_icon_list, .phone_menu li.phone_menu_cur .phone_icon_list {
+    margin-right: 5px
+}
+
+.phone_menu li .ico_desktop {
+    width: 14px;
+    height: 13px;
+    margin: 12px 5px 0 0
+}
+
+.phone_menu .phone_login a {
+    float: left
+}
+
+.phone_game_qrcode {
+    padding-top: 3px;
+    _padding-top: 13px
+}
+
+#j-user-menu {
+    display: none
+}
+
+.cn_fixedmenu {
+    position: fixed;
+    width: 50px;
+    z-index: 333;
+    overflow: hidden;
+    bottom: 200px;
+    left: 50%;
+    margin: 0 0 0 500px
+}
+
+.cn_fixedmenu a {
+    background: #fbfbfb;
+    width: 48px;
+    height: 48px;
+    display: block;
+    border: #ddd 1px solid;
+    margin-top: 10px
+}
+
+.cn_fixedmenu a span {
+    padding: 6px 12px 0;
+    line-height: 18px;
+    color: #fff;
+    font-size: 12px;
+    display: none;
+    text-align: center
+}
+
+.cn_fixedmenu a:hover {
+    background: #f60;
+    border-color: #d24400;
+    text-decoration: none
+}
+
+.cn_fixedmenu a:hover span {
+    display: block;
+    text-decoration: none
+}
+
+.cn_fixedmenu a:hover .icon {
+    display: none
+}
+
+.cn_fixedmenu .icon {
+    background: url(../images/phone_fixedmenu.png?__UED__1427680997718) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 12px auto 0
+}
+
+.cn_fixedmenu .backtop {
+    display: none
+}
+
+.cn_fixedmenu .feedback .icon {
+    background-position: 0 -78px
+}
+
+.cn_fixedmenu .post .icon {
+    background-position: 0 -26px
+}
+
+.cn_fixedmenu .fav .icon {
+    background-position: 0 -52px
+}
+
+.cn_fixedmenu .fav span, .cn_fixedmenu .post span {
+    line-height: 48px;
+    padding: 0
+}
+
+.cn_fixedmenu .m_pingce .icon {
+    background-position: 0 -104px
+}
+
+.cn_fixedmenu .m_zhuanqu .icon {
+    background-position: 0 -131px
+}
+
+.cn_fixedmenu .xyzx .icon {
+    background-position: 0 -104px
+}
+
+.cn_fixedmenu .xykc .icon {
+    background-position: 0 -131px
+}
+
+.tb_downyxh {
+    background: url(http://f1.img4399.com/ma~241_20150721095143_55ada5af90121.gif) no-repeat left center;
+    padding: 12px 0 10px 17px;
+    color: #f60;
+    margin-left: 0
+}
+
+.tb_downyxh a {
+    color: #f60
+}
+
+.phone_lianmeng {
+    position: absolute;
+    right: 136px;
+    top: 65px
+}

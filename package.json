@@ -1,0 +1,39 @@
+{
+  "name": "huodong-koa",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "web",
+    "app",
+    "http",
+    "application",
+    "framework",
+    "middleware",
+    "koa"
+  ],
+  "main": "app.js",
+  "scripts": {
+    "dev": "pm2 start process.config.js --only local --watch",
+    "test": "pm2 start process.config.js --only test --watch",
+    "ot": "pm2 start process.config.js --only ot --watch",
+    "prod": "pm2 start process.config.js --only production --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.4399doc.com:game_awesome/template-koa.git"
+  },
+  "author": "chenshuyao",
+  "license": "MIT",
+  "dependencies": {
+    "co-views": "^2.1.0",
+    "ejs": "^2.7.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.1.0",
+    "koa-proxy": "^0.9.0",
+    "koa-router": "^7.3.0",
+    "koa-session": "^5.5.1",
+    "koa-static": "^4.0.2",
+    "koa2-cors": "^2.0.5"
+  }
+}

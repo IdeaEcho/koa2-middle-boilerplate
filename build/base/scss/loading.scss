@@ -1,0 +1,134 @@
+/*mixin*/
+@function rem($px) {
+    @return $px/40*1rem;
+}
+.hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+.loadingBox {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+    padding-top: rem(130);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+    visibility: visible;
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    opacity: 1;
+    .loading {
+        position: relative;
+        top: 0;
+        width: rem(464);
+        height: rem(366);
+        margin: auto;
+        background:url('../images/bg.png') no-repeat;
+        background-size:rem(463) rem(365);
+        background-position: center;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .mask {
+        position: absolute;
+        top: 0;
+        width: rem(466);
+        height: rem(380);
+        margin: rem(-2) rem(-2) auto;
+        background:url('../images/mask.png');
+        background-size: rem(465) auto;
+        background-repeat: repeat;
+        z-index: 1;
+    }
+    .tree {
+        position: relative;
+        top: rem(50);
+        left: 0;
+        width: rem(926);
+        height: rem(188);
+        background:url('../images/tree.png') repeat-x;
+        background-size: auto 100%;
+        animation: tree .4s linear infinite;
+        background-repeat: repeat-x;
+        background-position: center;
+    }
+    .car {
+        position: absolute;
+        top: rem(-30);
+        left: rem(120);
+        width: rem(232);
+        height: rem(130);
+        position: relative;
+        background:url('../images/car.png') no-repeat;
+        background-size:100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .wheel {
+        position: absolute;
+        top: rem(93);
+        width: rem(62);
+        height: rem(62);
+        background:url('../images/wheel.png') no-repeat;
+        background-size:100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: rotating .4s linear infinite;
+        &.left {
+            left: rem(35);
+        }
+        &.right {
+            right: rem(35);
+        }
+    }
+    h3 {
+        font-size: rem(22);
+        font-weight: normal;
+        color: #333;
+    }
+    .xiaoyou {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: rem(162);
+        height: rem(89.4);
+        background:url('../images/loading-xiaoyou.png');
+        background-size: rem(162) rem(894);
+        animation: xiaoyou 1s steps(10) infinite;
+        transform: translate3d(-50%,-50%,0);
+        background-position: center;
+    }
+    @keyframes xiaoyou {
+        0%{
+          background-position: 0 0;
+        }
+        100%{
+          background-position: 0 rem(894);
+        }
+    }
+    @keyframes tree {
+        0%{
+            transform:translateX(0);
+        }
+        100%{
+            transform:translateX(rem(-463));
+        }
+    }
+    @keyframes rotating {
+        0%{
+            transform:rotate(0);
+        }
+        50%{
+            transform:rotate(180deg);
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+
+}

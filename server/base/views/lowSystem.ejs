@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>很抱歉</title>
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <script>
+          ! function(a) {
+              function b() {
+                  if (a.navigator.appVersion.match(/window/gi)) {
+                      m = f.getBoundingClientRect().width > 480 ? 480 : f.getBoundingClientRect().width;
+                  } else {
+                      m = f.getBoundingClientRect().width;
+                  }
+                  a.rem = m / 16,
+                      f.style.fontSize = a.rem + "px";
+              }
+              var c,
+                  d = a.navigator.appVersion.match(/iphone/gi) ? a.devicePixelRatio : 1,
+                  e = 1 / d,
+                  f = document.documentElement,
+                  g = document.createElement("meta");
+              if (a.dpr = d, a.addEventListener("resize", function() {
+                      clearTimeout(c), c = setTimeout(b, 300)
+                  }, !1), a.addEventListener("pageshow", function(a) {
+                      a.persisted && (clearTimeout(c), c = setTimeout(b, 300))
+                  }, !1), f.setAttribute("data-dpr", d), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + e + ", maximum-scale=" + e + ", minimum-scale=" + e + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g);
+              else {
+                  var h = document.createElement("div");
+                  h.appendChild(g),
+                      document.write(h.innerHTML)
+              }
+              b()
+          }(window);
+          </script>
+          <style>@charset "UTF-8";body{-ms-text-size-adjust:none;-o-user-select:none;-o-text-size-adjust:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-text-size-adjust:none;text-size-adjust:none;font:.6rem "微软雅黑",Arial,Helvetica,sans-serif;min-height:100%;overflow-x:hidden}.container{text-align:center;padding-top:3.25rem;width:80%;margin: auto;}.container img{max-width:100%}.container h3{font-size:.55rem;font-weight:400;color:#333}</style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="http://f1.img4399.com/ma~531_20180308104937_5aa0a4c10ab94.png?t=1520477377" alt="活动-手机系统太低" class="img">
+            <h3>ε=(´ο｀*)))当前版本过低无法参与该活动 <br>（仅支持4.0以上安卓系统）</h3>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*mixin*/
+body {
+  -ms-text-size-adjust: none;
+  -o-user-select: none;
+  -o-text-size-adjust: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+       text-size-adjust: none;
+  font: .6rem "微软雅黑",Arial,Helvetica,sans-serif;
+  min-height: 100%;
+  overflow-x: hidden; }
+
+.container {
+  text-align: center;
+  padding-top: 3.25rem;
+  width: 100%;
+  margin: auto; }
+  .container img {
+    max-width: 100%; }
+  .container h3 {
+    font-size: 0.55rem;
+    font-weight: normal;
+    color: #333; }
