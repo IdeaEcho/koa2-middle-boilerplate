@@ -14,7 +14,7 @@ class Controller {
     let index = ua.indexOf("Android")
     if (index < 0) return false
     let androidVersion = parseFloat(ua.slice(index + 8))
-    if (androidVersion <= 4.0) { // 版本大于4.0
+    if (androidVersion <= 4.0) { // 安卓系统低于4.0
       const base = require('../../base/controller')
       await base['lowSystem'](this.ctx, this.next)
       return true
