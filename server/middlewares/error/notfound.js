@@ -5,7 +5,7 @@ module.exports = async function onerror(ctx, next) {
         console.error('URL:' + ctx.originalUrl);
         ctx.app.emit('error', err)
         ctx.status = err.status || 404;
-        const base = require('../../base/controller')
+        const base = require('../../base/controllers/error')
         await base['error_404'](ctx, next)
     }
 }
